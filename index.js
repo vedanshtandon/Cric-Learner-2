@@ -6,8 +6,7 @@ var axios = require('axios');
 const abcd=require('./abcd');
 
 
-const hostname='0.0.0.0';
-const port=3000;
+
 
 app.use(cors());
 app.options('*', cors());
@@ -81,7 +80,7 @@ app.post('/getplayerbowlinfo', (req, res) => {
 
 
 
-
-app.listen(port, hostname,() =>{
-    console.log("Server started at http://${hostname}:${port}/", port)
+var port = process.env.PORT || 8081
+app.listen(port, function () {
+    console.log("Server started at http://localhost:%s", port)
 });
