@@ -45,7 +45,7 @@ var getPlayerData=function(playerId,summary){
             url: 'https://unofficial-cricbuzz.p.rapidapi.com/players/get-info',
             params: { playerId: playerId },
             headers: {
-                'x-rapidapi-host': 'unofficial-cricbuzz.p.rapidapi.com',
+                'x-rapidapi-host': 'cricbuzz-cricket.p.rapidapi.com',
                 'x-rapidapi-key': 'c6b2545514mshff7bd320e6e0561p17836ejsnbb4c7d2cd7e4'
             }
         };
@@ -72,7 +72,7 @@ var getPlayerBatData = function (playerId, summary) {
             url: 'https://unofficial-cricbuzz.p.rapidapi.com/players/get-batting',
             params: { playerId: playerId },
             headers: {
-                'x-rapidapi-host': 'unofficial-cricbuzz.p.rapidapi.com',
+                'x-rapidapi-host': 'cricbuzz-cricket.p.rapidapi.com',
                 'x-rapidapi-key': 'c6b2545514mshff7bd320e6e0561p17836ejsnbb4c7d2cd7e4'
             }
         };
@@ -100,7 +100,7 @@ var getPlayerBowlData = function (playerId, summary) {
             url: 'https://unofficial-cricbuzz.p.rapidapi.com/players/get-bowling',
             params: { playerId: playerId },
             headers: {
-                'x-rapidapi-host': 'unofficial-cricbuzz.p.rapidapi.com',
+               'x-rapidapi-host': 'cricbuzz-cricket.p.rapidapi.com',
                 'x-rapidapi-key': 'c6b2545514mshff7bd320e6e0561p17836ejsnbb4c7d2cd7e4'
             }
         };
